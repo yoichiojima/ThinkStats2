@@ -1,0 +1,12 @@
+version: "3.9"
+
+services: 
+
+  notebooks:
+    build: ./
+    container_name: ThinkStats2
+    ports:
+      - "0.0.0.0:8880:8888"
+    volumes:
+      - ./ThinkStats2:/ThinkStats2
+    restart: always
